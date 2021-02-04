@@ -1,0 +1,16 @@
+{
+  "name": "webaudio",
+  "version": "1.0.0",
+  "description": "Just playing around with the Web Audio API to see what it can do",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "audio",
+    "api"
+  ],
+  "author": "Me, Myself, and I",
+  "license": "MIT"
+}
