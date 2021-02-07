@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A demonstration of the WebAudio API... again">
+        <meta name="author" content="Grandclosing">
+
+        <title>Web Audio Demo 2</title>
+
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/wavetables.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <button onmousedown="playSaw()" onmouseup="stopSaw()">Play Saw</button>
+
+        <label for="attack">Attack</label>
+        <input name="attack" id="attack" type="range" min="0" max="1" value="0.2" step="0.1"/>
+
+        <label for="release">Release</label>
+        <input name="release" id="release" type="range" min="0" max="1" value="0.5" step="0.1"/>
+
+        <button onmousedown="playPulse()" onmouseup="stopPulse()">Play Pulse</button>
+
+        <label for="hz">Hz</label>
+        <input name="hz" id="hz" type="range" min="100" max="1320" value="880" step="1"/>
+        <label for="lfo">LFO</label>
+        <input name="lfo" id="lfo" type="range" min="1" max="40" value="30" step="1"/>
+
+        <button onmousedown="playNoise()" onmouseup="stopNoise()">Play Noise</button>
+
+        <label for="duration">Duration</label>
+        <input name="duration" id="duration" type="range" min="0" max="2" value="1" step="0.1"/>
+        <label for="band">Band</label>
+        <input name="band" id="band" type="range" min="400" max="1200" value="1000" step="5"/>
+
+        <button onclick="toggleSample()">Play Resonance</button>
+        
+        <label for="rate">Rate</label>
+        <input name="rate" id="rate" type="range" min="0.1" max="2" value="1" step="0.1" />
+    </body>
+</html>
